@@ -1,0 +1,1 @@
+# IT20123772-power_failure_management
