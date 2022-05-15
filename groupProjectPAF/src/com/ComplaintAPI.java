@@ -81,7 +81,7 @@ public class ComplaintAPI extends HttpServlet {
 		Map paras = getParasMap(request);
 
 		//getting values from the map and sending to update function
-		String output = complaintObj.updateComplaint(paras.get("hidComplaintIDSave").toString(),
+		String output = complaintObj.updateComplaint(paras.get("hidComplaintIDUpdate").toString(),
 											paras.get("status").toString());
 		
 		//sending the output to client

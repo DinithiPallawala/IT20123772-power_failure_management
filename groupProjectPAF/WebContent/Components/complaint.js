@@ -67,13 +67,13 @@ if (status == "success")
 // UPDATE==========================================
 $(document).on("click", ".btnUpdate", function(event) 
 { 
-$("#hidComplaintIDSave").val($(this).data("complaintid")); 
+$("#hidComplaintIDSave").val($(this).closest("tr").find('#hidComplaintIDUpdate').val()); 
 $("#cust_name").val($(this).closest("tr").find('td:eq(0)').text());
-$("#nic").val($(this).closest("tr").find('td:eq(0)').text());
-$("#area").val($(this).closest("tr").find('td:eq(0)').text());
-$("#grid_name").val($(this).closest("tr").find('td:eq(0)').text());
-$("#complaint").val($(this).closest("tr").find('td:eq(0)').text());
- $("#status").val($(this).closest("tr").find('td:eq(0)').text()); 
+$("#nic").val($(this).closest("tr").find('td:eq(1)').text());
+$("#area").val($(this).closest("tr").find('td:eq(2)').text());
+$("#grid_name").val($(this).closest("tr").find('td:eq(3)').text());
+$("#complaint").val($(this).closest("tr").find('td:eq(4)').text());
+ $("#status").val($(this).closest("tr").find('td:eq(5)').text()); 
 
 });
 
